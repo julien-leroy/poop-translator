@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Poop Translator",
+  "version": "0.3",
+  "description": "L'extension officielle de tous les scatophiles de la planète",
+  "author": "Malo Blanchard, Julien Leroy",
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["poopMaker.js"]
+  }],
+  "icons": {
+    "128": "icon.png"
+  }
+}
