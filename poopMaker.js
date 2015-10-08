@@ -1,35 +1,47 @@
 var dictionary = {
-  " et ": " crotte ",
-  "pour ": "popo ",
-  "bonjour": "crotin",
-  "vous": "poils pubiens",
-  "batiment": "caca à étages",
-  "entreprise": "prout économique",
-  "festival": "fesse",
-  "mec ": "cher excrement ",
-  "amis": "excrements",
-  "voiture": "défection à roulette",
-  "camion": "défection à roulette",
-  "scooter": "défection à roulette",
+  " bonjour": " crotin",
+  " vous": "poils pubiens",
+  " bâtiment": "caca à étages",
+  " entreprise": " prout économique",
+  " festival": " fessetival",
+  " mec": " excrément",
+  " amis": " excréments",
+  " voiture": "bouse à roues",
+  " camion": "crottin à roulette",
+  " scooter": " crottin à deux roulette",
   " moto": " défection à roulette",
-  "bagnole": "défection à roulette",
-  "bière": "pipi dans un verre",
-  " vin": " diarrhée dans un verre",
+  " bagnole": " diarrhée à roulette",
+  " bière": " pipi moussueux",
+  " vin": " pet de bouteille",
   " jour": " jour de diarrhée",
+  " pour ": " popo",
   " car": " cacar",
-  " si": " pipi",
   " a ": " anus ",
   " à ": " anus ",
-  "messages": "guanos de mouette",
-  "personnes": "déjéctions",
+  " modèle": " pet atomique",
+  " nombre": " caca croustillant",
+  " tâche": " chiasse humide",
+  "écrire": "entâcher de merde",
+  "automatiquement": " au poils",
+  "programmation": " machine à gaz",
+  "procédure": " déjection",
+  "méthode": " mélandre de chiasse",
+  " jus": " jus d'anus",
+  "domaine": " caca mou",
+  "conception": " chiasse granuleuse",
+  "modifier": " cacacryptographier",
+  " abus": " anus paisible",
+  "messages": " guanos de mouette",
+  "personnes": " déjections",
   "chocolat": "jus anal",
-  "france": "bouse de vache"
+  "france": "bouse de vache",
+  "ananas": "ananal"
 };
 
 function replaceTextOnPage(obj){
   getAllTextNodes().forEach(function(node){
     for (var x in obj) {
-      node.nodeValue = node.nodeValue.replace(new RegExp(quote(x), 'g'), obj[x]);
+      node.nodeValue = node.nodeValue.toLowerCase().replace(new RegExp(quote(x), 'g'), obj[x]);
     }
   });
   function getAllTextNodes(){
